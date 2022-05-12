@@ -8,6 +8,9 @@
 
 /* ===== REUSABLE CSS CLASS ===== */
 @layer components {
+  .section {
+    @apply pt-32 pb-16;
+  }
   .section-button {
     @apply relative flex justify-center py-4 px-8 bg-white rounded-[1rem] text-black font-semibold;
   }
