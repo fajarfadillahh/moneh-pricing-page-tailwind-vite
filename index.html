@@ -33,8 +33,11 @@
           Moneh
         </a>
 
-        <div class="header__menu" id="header-menu">
-          <ul class="header__list flex flex-col gap-6">
+        <div
+          class="header__menu md:flex md:items-center md:gap-6"
+          id="header-menu"
+        >
+          <ul class="header__list flex flex-col gap-6 md:flex-row">
             <li class="header__item">
               <a href="#" class="header__link active-link">Home</a>
             </li>
@@ -52,13 +55,15 @@
             </li>
           </ul>
 
-          <a href="#" class="header__button section-button bg-green mt-6"
+          <a
+            href="#"
+            class="header__button section-button bg-green mt-6 md:mt-0"
             >Create Account</a
           >
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-menu"></i>
@@ -82,7 +87,9 @@
             </p>
           </div>
 
-          <div class="home__group flex justify-center flex-wrap gap-12">
+          <div
+            class="home__group flex justify-center flex-wrap gap-12 md:items-start"
+          >
             <div class="home__content">
               <div class="home__content-header">
                 <h3 class="home__content-title">BASIC</h3>
