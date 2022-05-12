@@ -1,4 +1,17 @@
+/* ===== FONT GOOGLE ===== */
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@400;600&display=swap");
+
 /* ===== Add the Tailwind directives to your CSS ===== */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ===== REUSABLE CSS CLASS ===== */
+@layer components {
+  .section-button {
+    @apply relative flex justify-center py-4 px-8 bg-white rounded-[1rem] text-black font-semibold;
+  }
+  .section-button::before {
+    @apply absolute content-[""] w-full h-full -top-1 -left-1 border-2 border-solid border-black rounded-[1rem];
+  }
+}
