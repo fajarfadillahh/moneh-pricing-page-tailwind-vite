@@ -31,3 +31,35 @@
 .header__link.active-link {
   @apply text-black font-semibold;
 }
+
+/* ===== HOME SECTION ===== */
+.home__content {
+  @apply relative w-[300px] grid gap-10 p-8 bg-grey-200 rounded-[2rem];
+}
+.home__content:nth-child(2) {
+  @apply bg-yellow;
+}
+.home__content::before {
+  @apply absolute content-[""] w-full h-full rounded-[2rem] -top-2 -left-2 border-2 border-solid border-black;
+}
+.home__content-header {
+  @apply text-center pb-8 border-b-2 border-solid border-black;
+}
+.home__content-title {
+  @apply text-[20px] text-black font-semibold mb-2;
+}
+.home__content-price {
+  @apply inline-flex items-center gap-2 text-[42px] text-black font-semibold;
+}
+.home__content-year {
+  @apply text-[16px] text-black font-reguler;
+}
+.home__content-list {
+  @apply flex flex-col gap-3;
+}
+.home__content-item {
+  @apply text-black inline-flex items-center gap-2;
+}
+.home__content-check {
+  @apply inline-flex text-[1rem] p-[.2rem] bg-black rounded-full text-white;
+}
