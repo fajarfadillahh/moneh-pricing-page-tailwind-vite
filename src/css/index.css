@@ -49,7 +49,7 @@
   @apply absolute content-[""] w-full h-full rounded-[2rem] -top-2 -left-2 border-2 border-solid border-black;
 }
 .home__content-header {
-  @apply text-center pb-8 border-b-2 border-solid border-black;
+  @apply text-center pb-8 border-b-2 border-solid border-black z-30;
 }
 .home__content-title {
   @apply text-[20px] text-black font-semibold mb-2;
@@ -61,11 +61,16 @@
   @apply text-[16px] text-black font-reguler;
 }
 .home__content-list {
-  @apply flex flex-col gap-3;
+  @apply flex flex-col gap-3 z-30;
 }
 .home__content-item {
   @apply text-black inline-flex items-center gap-2;
 }
 .home__content-check {
   @apply inline-flex text-[1rem] p-[.2rem] bg-black rounded-full text-white;
+}
+
+/* ===== ::SELECTION ===== */
+::selection {
+  @apply bg-green bg-opacity-50 text-white;
 }
