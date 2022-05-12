@@ -4,9 +4,66 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Moneh Pricing Page</title>
+
+    <!-- ==== FAVICON ===== -->
+    <link rel="shortcut icon" href="./src/img/logo.svg" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./src/img/logo.svg" />
+
+    <!-- ==== BOXICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="font-body font-reguler">
+    <!-- ===== HEADER SECTION ===== -->
+    <header
+      class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-400"
+      id="header"
+    >
+      <div
+        class="header__container container h-24 flex justify-between items-center"
+      >
+        <a
+          href="#"
+          class="header__logo inline-flex items-center gap-2 text-[20px] text-black font-semibold"
+        >
+          <img src="./src/img/logo.svg" alt="" class="header__logo-icon w-9" />
+          Moneh
+        </a>
+
+        <div class="header__menu" id="header-menu">
+          <ul class="header__list flex flex-col gap-6">
+            <li class="header__item">
+              <a href="#" class="header__link">Features</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Stories</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link active-link">Pricing</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Products</a>
+            </li>
+          </ul>
+
+          <a href="#" class="header__button section-button bg-green mt-6"
+            >Create Account</a
+          >
+        </div>
+
+        <div
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          id="header-toggle"
+        >
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===== HEADER SECTION ===== -->
+
     <!-- ===== MAIN JS ===== -->
     <script type="module" src="./src/js/main.js"></script>
   </body>
